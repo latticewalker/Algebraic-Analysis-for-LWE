@@ -71,7 +71,7 @@ if __name__ == "__main__":
     k = 700
     w = 8
     C = []
-    a1 = [525, 528, 591, 503, 608, 490, 546, 471, 509, 499, 532, 503, 528, 572, 493, 565, 549, 574, 501, 489]
+    a1 = [525, 528, 591, 503, 608, 490, 546, 471, 509, 499, 532, 503, 528, 572, 493, 565, 549, 574, 501, 489] #Data from the 20 randomly generated LWE instances.
 
     print("\n[Experiment 1] Configuration: k=700, w=8")
     print("Total samples N = 99438, trials per zero_count = 4000")
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
     k, w = 1000, 9
     S = []
-    a2 = [392, 343, 375, 340, 352, 365, 405, 332, 385, 350, 373, 351, 364, 352, 358, 365, 372, 383, 379,375]
+    a2 = [392, 343, 375, 340, 352, 365, 405, 332, 385, 350, 373, 351, 364, 352, 358, 365, 372, 383, 379,375] #Data from the 20 randomly generated LWE instances.
     print("\n[Experiment 2] Configuration: k=1000, w=9")
     print("Total samples N = 99438, trials per zero_count = 4000")
     print(f"Zero counts to test (length = {len(a2)}): {a2}\n")
@@ -94,3 +94,4 @@ if __name__ == "__main__":
         s=s/4000
         S.append(s)
     print(f"\n[Result] Group 2: mean success rate = {np.mean(S):.4f}, std = {np.std(S):.4f}\n")
+
