@@ -5,7 +5,6 @@ from multiprocessing import cpu_count, Pool
 from random import random, randint, shuffle
 from statistics import median
 from sys import stdout
-import matplotlib.pyplot as plt
 import numpy as np
 
 # FPLLL, G6K imports
