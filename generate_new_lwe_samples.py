@@ -1,9 +1,8 @@
 import argparse
 from functools import partial
-from math import ceil, comb, cos, erf, exp, pi, prod, sin, sqrt
+from math import ceil, comb
 from multiprocessing import cpu_count, Pool
 from random import random, randint, shuffle
-from statistics import median
 from sys import stdout
 import numpy as np
 
