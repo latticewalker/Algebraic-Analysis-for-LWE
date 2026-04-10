@@ -11,7 +11,7 @@
    Verifies the probability that the true secret is contained in the system.  
    **Input**: Observed zero counts in the amplified error, along with the system parameters `(K, W, N)`.  
    **Output**: Mean simulated success probability and its standard deviation across multiple LWE instances.
-4. 's_6.m'
+4. `s_6.m`
    Magma code. First select appropriate parameters K, W, then construct the corresponding system of equations, and finally solve it using resultants. The procedure corresponds to the proof part of Theorem 2.
    **Input**:New LWE samples, sorted as `(a, b, e)`(e.g. new_lwe_samples(a,b,e).m)
    **Output**:The obtained solution (which may be non-existent or incorrect with some probability)
