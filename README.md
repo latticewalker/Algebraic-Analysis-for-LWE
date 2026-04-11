@@ -20,6 +20,9 @@ The experimental verification codes for paper 2026/688 on ePrint.
    **Input**:New LWE samples, sorted as `(a, b, e)`(e.g. new_lwe_samples(a,b,e).m)
    
    **Output**:The obtained solution (which may be non-existent or incorrect with some probability)
+
+5. `verification of the new constructed equations.py`
+   This code integrates the steps for verifying the validity of the constructed system of equations and implements parallel acceleration.
    
 **Example usage:**  
 You can first generate new LWE samples with `generate_new_lwe_samples.py` and then pass them to `verify_candidate_count.py`.  
