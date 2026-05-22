@@ -1,4 +1,3 @@
-The experimental verification codes for paper 2026/688 on ePrint.
 
 1. `generate_new_lwe_samples.py`  
    This script requires the installation of G6K and FPyLLL.  
@@ -21,8 +20,6 @@ The experimental verification codes for paper 2026/688 on ePrint.
    
    **Output**:The obtained solution (which may be non-existent or incorrect with some probability)
 
-5. `verification of the new constructed equations.py`
-   This code integrates the steps for verifying the validity of the constructed system of equations and implements parallel acceleration.
    
 **Example usage:**  
 You can first generate new LWE samples with `generate_new_lwe_samples.py` and then pass them to `verify_candidate_count.py`.  
