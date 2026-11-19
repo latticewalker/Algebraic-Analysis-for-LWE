@@ -28,3 +28,6 @@
 You can first generate new LWE samples with `generate_new_lwe_samples.py` and then pass them to `verify_candidate_count.py`.  
 We also provide a pre‑generated LWE instance: `new_lwe_sample_n50_nlat40.txt`, created using the Set (1) parameters from the paper. The corresponding true secret is `[-1, 0, 0, -1, -1, 0, 1, 0, 1, 1]`.  
 Simply run `verify_candidate_count.py` with this input file to directly obtain the output file `the_number_of_solutions.txt`.
+
+
+We put the code of complexity estimation for the three KYBER parameter sets using the models in Tables 2 and 3, Remark 3 (quantum), and Table 4 in the directory Complexity estimate
