@@ -30,4 +30,4 @@ We also provide a pre‑generated LWE instance: `new_lwe_sample_n50_nlat40.txt`,
 Simply run `verify_candidate_count.py` with this input file to directly obtain the output file `the_number_of_solutions.txt`.
 
 
-We put the code of complexity estimation for the three KYBER parameter sets using the models in Tables 2 and 3, Remark 3 (quantum), and Table 4 in the directory Complexity estimate
+We put the code of complexity estimation for three KYBER parameter sets using the formulas in Tables 2 and 3, Remark 3 (quantum), and Table 4 in the directory--Complexity estimates
