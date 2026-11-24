@@ -28,7 +28,7 @@ PROFILES = {
 
 
 def threshold(mode, override):
-    return override if override is not None else (0.8005 if mode == 'table3' else 0.80)
+    return override if override is not None else 0.8
 
 
 def admissible(n, mode, parameters):
