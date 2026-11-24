@@ -40,15 +40,10 @@ python search.py --search --mode all --scheme 512 768 1024 --workers 36 --profil
 
 Search profiles: `quick`, `balanced` (default), and `thorough`. Coarse search, automatic local refinement, and finalist sieve scans are performed without manually specifying parameter bounds. The search is heuristic and does not prove global optimality.
 
-For a small local test:
-
-```bash
-python search.py --search --mode table3 --scheme 512 --workers 2 --profile quick
-```
 
 ## Table 4
 
-Table 4 is evaluated directly, without an optimization search.
+Table 4 is evaluated directly.
 
 ```bash
 python search.py --mode direct --scheme 512 768 1024
@@ -56,6 +51,6 @@ python search.py --mode direct --scheme 512 768 1024
 
 ## Output and options
 
-All results are printed to the terminal. Each searched model reports the final complexity, `n_lat`, `beta_bkz`, `beta_sieve`, `gamma`, `log2(K)`, `log2(W)`, the configured success threshold, and the achieved success probability. 
+All results are printed to the terminal. Each searched model reports the final complexity, `n_lat`, `beta_bkz`, `beta_sieve`, `gamma`, `log2(K)`, `log2(W)`, and the achieved success probability. 
 
 
