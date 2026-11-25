@@ -12,7 +12,7 @@ python -m pip install numpy scipy
 
 ## Parameter search
 
-The following commands search KYBER-512, KYBER-768, and KYBER-1024 using 36 worker processes. Parameter ranges are selected automatically.
+The following commands search KYBER-512, KYBER-768, and KYBER-1024 using 36 worker processes. 
 
 **Table 2**
 
@@ -38,18 +38,16 @@ python search.py --search --mode quantum --scheme 512 768 1024 --workers 36 --pr
 python search.py --search --mode all --scheme 512 768 1024 --workers 36 --profile thorough
 ```
 
-Search profiles: `quick`, `balanced` (default), and `thorough`. Coarse search, automatic local refinement, and finalist sieve scans are performed without manually specifying parameter bounds. The search is heuristic and does not prove global optimality.
+Search profiles: quick, balanced (default), and thorough---each representing a different level of search intensity.
 
 
 ## Table 4
-
-Table 4 is evaluated directly.
 
 ```bash
 python search.py --mode direct --scheme 512 768 1024
 ```
 
-## Output and options
+## Output
 
 All results are printed to the terminal. Each searched model reports the final complexity, `n_lat`, `beta_bkz`, `beta_sieve`, `gamma`, `log2(K)`, `log2(W)`, and the achieved success probability. 
 
